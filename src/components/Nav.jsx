@@ -1,0 +1,35 @@
+import React from 'react'
+import navlinks from '../constants'
+
+const Nav = () => {
+  return (
+    <header>
+        <nav>
+            <img src="/logo.svg" alt="Apple Logo" />
+
+            <ul>
+                {
+                    navlinks.map(({label}) => (
+                        <li key={label}>
+                            <a href={label}>{label}</a>
+                        </li>
+                    ))
+                }
+
+                 </ul>
+
+            <div className='flex-center gap-8'>
+                <button>
+                    <img src="/search.svg" alt="Search" />
+                </button>
+
+                <button>
+                    <img src="/cart.svg" alt="Cart" />
+                </button>
+            </div>
+        </nav>
+    </header>
+  )
+}
+
+export default Nav
