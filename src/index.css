@@ -61,6 +61,27 @@ html{
             @apply bg-transparent border-none outline-none cursor-pointer;
         }
     }
+    #hero{
+        @apply h-fit lg:h-[80vh] col-center mt-40 lg:mt-40 2xl:mt-[7vh];
+        div {
+            @apply relative z-10 col-center lg:translate-y-16;
+        } 
+        h1 {
+            @apply font-bold lg:text-3xl 2xl:text-5xl text-white
+        }
+        img {
+            @apply container mx-auto w-2/3;
+        }
+        video {
+            @apply mx-auto lg:translate-y-5 2xl:translate-y-0;
+        }
+        button {
+            @apply relative z-10 bg-primary text-white py-2 px-6 mt-10 lg:mt-0 mb-5 rounded-full text-lg cursor-pointer font-bold hover:bg-transparent hover:border-2 hover:text-primary 
+        }
+        p {
+            @apply text-xl;
+        }
+    }
 
 
 }
